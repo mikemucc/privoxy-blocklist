@@ -1,0 +1,8 @@
+version: '3'
+services:
+  privoxy:
+    container_name: privoxy
+    restart: unless-stopped
+    image: local/privoxy:latest
+    ports:
+        - 8118:8118
